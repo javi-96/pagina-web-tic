@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuyCode.ar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/estilo.css">
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div class="contenedor">
+            <nav class="navegacion">
+                <a href="#" class="logo">Juy<span>Code.ar</span> </a>
+                <ul class="enlaces-navegacion">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#" class="cta-navegacion" id="linea">Iniciar Seción</a></li>
+                </ul>
+                <div class="menu-movil">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO -->
+    <section class="hero">
+        <div class="contenedor">
+            <h1>Transforma tu carrera en tecnología</h1>
+            <p>Bootcamps intensivos de desarrollo web con metodología práctica y mentoría personalizada. Conviértete en
+                desarrollador full-stack en 16 semanas.</p>
+            <div class="botones-hero">
+                <a href="#" id="btn-abrir-modal" class="boton boton-acento">Inscribirse</a>
+                <a href="#cursos" class="boton boton-secundario">Ver Cursos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN INSCRIPCIÓN -->
+    <div id="modal-inscripcion" class="modal-contenedor">
+        <div class="modal-contenido">
+
+            <span id="btn-cerrar-modal" class="modal-cerrar">&times;</span>
+
+            <h2>Formulario de Inscripción</h2>
+            <p>Completa tus datos para recibir información sobre el proceso de inscripción.</p>
+
+            <form id="formulario-inscripcion">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <button type="submit" class="btn btn-enviar">Enviar Solicitud</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section class="seccion nosotros" id="nosotros">
+        <div class="contenedor">
+            <div class="contenido-nosotros">
+                <div class="texto-nosotros">
+                    <h2>La mejor formación para desarrolladores</h2>
+                    <p>En JuyCode.ar combinamos teoría y práctica en un entorno de aprendizaje intensivo diseñado para
+                        prepararte para una carrera en desarrollo web.</p>
+
+                    <div class="caracteristicas-nosotros">
+                        <div class="caracteristica">
+                            <div class="icono-caracteristica">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <h3>Aprendizaje práctico</h3>
+                                <p>Más del 80% del tiempo dedicado a proyectos reales y ejercicios prácticos.</p>
+                            </div>
+                        </div>
+                        <div class="caracteristica">
+                            <div class="icono-caracteristica">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h3>Mentoría personalizada</h3>
+                                <p>Instructores expertos te guiarán durante todo el proceso de aprendizaje.</p>
+                            </div>
+                        </div>
+                        <div class="caracteristica">
+                            <div class="icono-caracteristica">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <h3>Oportunidades laborales</h3>
+                                <p>Conectamos a nuestros graduados con empresas tecnológicas líderes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="boton boton-principal">Conoce Nuestra Metodología</a>
+                </div>
+                <div class="imagen-nosotros">
+                    <img src="/IMG_20250928_163826356_HDR-Photoroom.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CURSOS -->
+    <section class="seccion cursos" id="cursos">
+        <div class="contenedor">
+            <div class="encabezado-seccion">
+                <h2>Nuestros Programas</h2>
+                <p>Elige el bootcamp que se adapte a tus objetivos profesionales</p>
+            </div>
+
+            <div class="grid-cursos">
+                <div class="tarjeta-curso">
+                    <div class="imagen-curso">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="contenido-curso">
+                        <span class="etiqueta-curso">Tiempo Completo</span>
+                        <h3>Desarrollo Web Full-Stack</h3>
+                        <p>Aprende HTML, CSS, JavaScript, React, Node.js y bases de datos para convertirte en
+                            desarrollador full-stack.</p>
+                        <div class="meta-curso">
+                            <span><i class="far fa-duracion"></i> 16 semanas</span>
+                            <span><i class="fas fa-modalidad"></i> Online</span>
+                        </div>
+                        <a href="/curso1.html" class="boton boton-secundario">Más Información</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-curso">
+                    <div class="imagen-curso">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="contenido-curso">
+                        <span class="etiqueta-curso">Medio Tiempo</span>
+                        <h3>Frontend con React</h3>
+                        <p>Especialízate en desarrollo frontend moderno con React, Redux y las últimas herramientas del
+                            ecosistema.</p>
+                        <div class="meta-curso">
+                            <span><i class="far fa-duracion"></i> 12 semanas</span>
+                            <span><i class="fas fa-modalidad"></i> Online</span>
+                        </div>
+                        <a href="/curso2.html" class="boton boton-secundario">Más Información</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-curso">
+                    <div class="imagen-curso">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="contenido-curso">
+                        <span class="etiqueta-curso">Tiempo Completo</span>
+                        <h3>Backend con Node.js</h3>
+                        <p>Domina el desarrollo backend con Node.js, Express, bases de datos y despliegue de
+                            aplicaciones.</p>
+                        <div class="meta-curso">
+                            <span><i class="far fa-duracion"></i> 10 semanas</span>
+                            <span><i class="fas fa-modalidad"></i> Online</span>
+                        </div>
+                        <a href="/curso3.html" class="boton boton-secundario">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN TESTIMONIOS -->
+    <section class="seccion testimonios" id="testimonios">
+        <div class="contenedor">
+            <div class="encabezado-seccion">
+                <h2>Historias de Éxito</h2>
+                <p>Lo que dicen nuestros graduados sobre su experiencia en JuyCode.ar</p>
+            </div>
+
+            <div class="contenedor-testimonios">
+                <div class="tarjeta-testimonio">
+                    <div class="texto-testimonio">
+                        <p>Antes de JuyCode.ar trabajaba en un campo completamente diferente. En solo 4 meses pude hacer
+                            la transición a desarrollador web y ahora trabajo en una startup tecnológica. La metodología
+                            práctica fue clave para mi aprendizaje.</p>
+                    </div>
+                    <div class="autor-testimonio">
+                        <div class="avatar-autor">MC</div>
+                        <div class="info-autor">
+                            <h4>María Cortés</h4>
+                            <p>Desarrolladora Frontend en TechStart</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-testimonio">
+                    <div class="texto-testimonio">
+                        <p>Los instructores de JuyCode.ar son increíbles. No solo dominan la tecnología, sino que saben
+                            cómo enseñarla. El apoyo continuo y los proyectos reales me prepararon perfectamente para mi
+                            primer trabajo como desarrollador full-stack.</p>
+                    </div>
+                    <div class="autor-testimonio">
+                        <div class="avatar-autor">JL</div>
+                        <div class="info-autor">
+                            <h4>Javier López</h4>
+                            <p>Desarrollador Full-Stack en DigitalCorp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CTA -->
+    <section class="seccion llamada-accion">
+        <div class="contenedor">
+            <h2>¿Listo para cambiar tu carrera?</h2>
+            <p>Únete a nuestra próxima cohorte y comienza tu journey en el mundo del desarrollo web. Plazas limitadas.
+            </p>
+            <a href="#" class="boton boton-principal">Inscribirse</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-pagina">
+        <div class="contenedor">
+            <div class="contenido-footer">
+                <div class="columna-footer">
+                    <h3>JuyCode.ar</h3>
+                    <p>Formamos a la próxima generación de desarrolladores web mediante bootcamps intensivos y
+                        prácticos.</p>
+                    <div class="redes-sociales">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="columna-footer">
+                    <h3>Programas</h3>
+                    <ul class="enlaces-footer">
+                        <li><a href="#">Desarrollo Web Full-Stack</a></li>
+                        <li><a href="#">Frontend con React</a></li>
+                        <li><a href="#">Backend con Node.js</a></li>
+                        <li><a href="#">Cursos Intensivos</a></li>
+                    </ul>
+                </div>
+
+                <div class="columna-footer">
+                    <h3>Recursos</h3>
+                    <ul class="enlaces-footer">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Guías de Carrera</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="columna-footer">
+                    <h3>Contacto</h3>
+                    <ul class="enlaces-footer">
+                        <li><a href="#">info@JuyCode.ar.com</a></li>
+                        <li><a href="#">+54 9388 4133 529</a></li>
+                        <li><a href="#">Calle Tecnologia 123, S.S. de Jujuy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-inferior">
+                <p>&copy; 2025 JuyCode.ar. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>
